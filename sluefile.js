@@ -12,7 +12,7 @@ slue.task('build', function() {
 
     // 也可以综合调用，会剥离公共模块
     var map = ['jsdir', 'cssdir'];
-    var stream = slue.bound(slueConfig).map(function(stream, i) {
+    var streams = slue.bound(slueConfig).map(function(stream, i) {
         stream.pipe(slue[map[i]]);
     });
 });
@@ -32,13 +32,15 @@ slue.task('reload', ['build'], function() {
 
 slue.task('watch', function() {
     return slue.watch('./src/**').on('change', function(file) {
-        slue.run('build');
         slue.run('reload');
     })
 });
 
+slue.task('copy', ['build'], function() {
+    return slue.src('./src/index.html').pipe(slue.dest('./build/'));
+});
 
-slue.task('default', ['build'], function() {
+slue.task('default', ['copy'], function() {
     slue.run('watch');
     slue.run('server');
 });

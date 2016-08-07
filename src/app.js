@@ -2,7 +2,7 @@
 require('./modules/a.less');
 
 // css demo
-require('./modules/b.css');
+require('./modules/b.css'); 
 
 // js demo
 var modA = require('./modules/modA.js');
@@ -13,7 +13,7 @@ var commonMap = require('./common.json');
 console.log(commonMap);
 
 // html demo
-var index = require('../index.html');
+var index = require('./index.html');
 console.log(index);
 
 // jade demo 暂不支持

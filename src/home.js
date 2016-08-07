@@ -1,9 +1,8 @@
 require('./modules/a.less');
 require('./modules/b.css');
 
-var str = "============================";
-
 var modA = require('./modules/modA.js');
+var modD = require('./modules/modD');
 
 // slue-conf alain demo
 var modC = require('components/modC');
