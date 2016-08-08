@@ -3,18 +3,15 @@ var merge = require('merge-stream');
 var browserSync = require('browser-sync');
 var slueConfig = require('./slue-conf.js');
 slue.task('build', function() {
-    // 可以分开用
-    /*var commonJs = slue.commonJsBound(slueConfig).pipe(slue.jsdir);
-    var commonCss = slue.commonCssBound(slueConfig).pipe(slue.cssdir);
-    var js = slue.jsBound(slueConfig).pipe(slue.jsdir);
-    var css = slue.cssBound(slueConfig).pipe(slue.cssdir);
-    return merge(commonJs, commonCss, js, css);*/
-
-    // 也可以综合调用，会剥离公共模块
+    // slue.jsdir为js文件要发布到的目录
+    // slue.cssdir为css文件要发布到的目录
     var map = ['jsdir', 'cssdir'];
+    // streams为长度为2的数组，分别为js,css的stream;
+    // slueConfig为打包配置文件
     var streams = slue.bound(slueConfig).map(function(stream, i) {
-        stream.pipe(slue[map[i]]);
+        return stream.pipe(slue[map[i]]);
     });
+    return merge(streams[0], streams[1]);
 });
 
 slue.task('server', function() {

@@ -2,7 +2,7 @@
 require('./modules/a.less');
 
 // css demo
-require('./modules/b.css'); 
+require('./modules/b.css');
 
 // js demo
 var modA = require('./modules/modA.js');

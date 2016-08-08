@@ -96,14 +96,14 @@
     '/build/static/pkg/js/common.js': function(require, exports, module) {
 
     },
-    'modA_088f2367': function(require, exports, module) {
-        var modB = require('modB_a6a18c40');
+    'modA_88f33483': function(require, exports, module) {
+        var modB = require('modB_e9b8ffe1');
         modB.bar();
         exports.bar = function() {
-            console.log('test modA111');
+            console.log('test modA');
         }
     },
-    'modB_a6a18c40': function(require, exports, module) {
+    'modB_e9b8ffe1': function(require, exports, module) {
         exports.bar = function() {
             console.log('test modB');
         }

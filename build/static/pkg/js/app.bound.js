@@ -94,19 +94,19 @@
     return require(absoluteuri);
 })(this, {
     '/build/static/pkg/js/app.bound.js': function(require, exports, module) {
-        require('app_0b027c00');
+        require('app_7a0b2c14');
     },
-    'app_0b027c00': function(require, exports, module) {
+    'app_7a0b2c14': function(require, exports, module) {
         // less demo
-        // css demo 
+        // css demo
         // js demo
-        var modA = require('modA_088f2367');
-        var modB = require('modB_a6a18c40');
+        var modA = require('modA_88f33483');
+        var modB = require('modB_e9b8ffe1');
         // json demo
-        var commonMap = require('common_6f194a04');
+        var commonMap = require('common_f225f4cd');
         console.log(commonMap);
         // html demo
-        var index = require('index_4e7181ed');
+        var index = require('index_d49626fd');
         console.log(index);
         // jade demo 暂不支持
         /*var o = {
@@ -114,7 +114,7 @@
                 description: '我喜欢猫'
             }
         };
-        var md = require('md_bd903ef3');
+        var md = require('md_92a41990');
         console.log(md(o));*/
         modA.bar();
         modB.bar();
@@ -122,10 +122,10 @@
             console.log('test app');
         }
     },
-    'common_6f194a04': function(require, exports, module) {
+    'common_f225f4cd': function(require, exports, module) {
         module.exports = {"chunks":{},"moduleids":{"./modules/a.less":"a_4d4519c3","./modules/b.css":"b_bb76453f","./modules/modA.js":"modA_ba79b660","./modB.js":"modB_74293644","components/modC":"modC_a7dae6ae","../src/modules/modA":"modA_ba79b660","./modules/modB":"modB_74293644"},"deps":{"D:\\github\\demo\\src\\modules\\modA.js":"modA_ba79b660","D:\\github\\demo\\src\\modules\\modB.js":"modB_74293644"},"depsCss":{"D:\\github\\demo\\src\\modules\\a.less":"a_4d4519c3","D:\\github\\demo\\src\\modules\\b.css":"b_bb76453f"},"allCss":{"D:\\github\\demo\\src\\modules\\a.less":"a_4d4519c3","D:\\github\\demo\\src\\modules\\b.css":"b_bb76453f"},"uri":"/build/static/pkg/js/common.js"}
     },
-    'index_4e7181ed': function(require, exports, module) {
-        module.exports = "<!DOCTYPE html>\n<html>\n\t<head>\n\t\t<title>Hello, World</title>\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/pkg/css/all.css\">\n\t</head>\n\t<body>\n    <div class=\"less-div\">\n      FIS3 面向前端的工程构建工具\n      <ul>\n        <li class=\"list-1\">构建</li>\n        <li class=\"list-2\">调试</li>\n      </ul>\n    </div>\n\t\t<!--<script type=\"text/javascript\" src=\"./lib/mod.js\"></script>-->\n    <script type=\"text/javascript\" src=\"/static/pkg/js/common.js\"></script>\n    <script type=\"text/javascript\" src=\"/static/pkg/js/app.bound.js\"></script>\n    <script type=\"text/javascript\" src=\"/static/pkg/js/home.bound.js\"></script>\n\t</body>\n</html>"
+    'index_d49626fd': function(require, exports, module) {
+        module.exports = "<!DOCTYPE html>\r\n<html>\r\n\t<head>\r\n\t\t<title>Hello, World</title>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/static/pkg/css/all.css\">\r\n\t</head>\r\n\t<body>\r\n    <div class=\"less-div\">\r\n      FIS3 面向前端的工程构建工具\r\n      <ul>\r\n        <li class=\"list-1\">构建</li>\r\n        <li class=\"list-2\">调试</li>\r\n      </ul>\r\n    </div>\r\n\t\t<!--<script type=\"text/javascript\" src=\"./lib/mod.js\"></script>-->\r\n    <script type=\"text/javascript\" src=\"/static/pkg/js/common.js\"></script>\r\n    <script type=\"text/javascript\" src=\"/static/pkg/js/app.bound.js\"></script>\r\n    <script type=\"text/javascript\" src=\"/static/pkg/js/home.bound.js\"></script>\r\n\t</body>\r\n</html>"
     }
 })

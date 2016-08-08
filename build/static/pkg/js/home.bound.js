@@ -94,25 +94,25 @@
     return require(absoluteuri);
 })(this, {
     '/build/static/pkg/js/home.bound.js': function(require, exports, module) {
-        require('home_75df46ba');
+        require('home_b0527c23');
     },
-    'home_75df46ba': function(require, exports, module) {
-        var modA = require('modA_088f2367');
-        var modD = require('modD_cc1f2303');
+    'home_b0527c23': function(require, exports, module) {
+        var modA = require('modA_88f33483');
+        var modD = require('modD_f4bcdb4d');
         // slue-conf alain demo
-        var modC = require('modC_69000838');
+        var modC = require('modC_cfc4f9b6');
         modA.bar();
         modC.bar();
         exports.app = function() {
             console.log('test app');
         }
     },
-    'modD_cc1f2303': function(require, exports, module) {
+    'modD_f4bcdb4d': function(require, exports, module) {
         exports.bar = function() {
             console.log('test modB');
         }
     },
-    'modC_69000838': function(require, exports, module) {
+    'modC_cfc4f9b6': function(require, exports, module) {
         exports.bar = function() {
             console.log('test modC');
         }
