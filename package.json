@@ -17,7 +17,8 @@
   "author": "西楚剑客",
   "license": "ISC",
   "devDependencies": {
-    "slue": "^1.1.6",
+    "classnames": "^2.2.5",
+    "slue": "^1.1.7",
     "browser-sync": "^2.7.12",
     "merge-stream": "^1.0.0"
   },
