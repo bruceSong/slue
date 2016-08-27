@@ -27,6 +27,10 @@ console.log(md(o));*/
 
 modA.bar();
 modB.bar();
+
+var classNames = require('classNames');
+console.log(classNames);
+
 exports.app = function() {
     console.log('test app');
 }

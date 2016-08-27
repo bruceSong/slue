@@ -18,6 +18,12 @@ module.exports = {
         'app.bound.js': ['./src/app.js'],
         'home.bound.js': ['./src/home.js']
     },
+    externals: {
+        'react': 'React',
+        'react-dom': 'ReactDOM',
+        'react-router': 'ReactRouter',
+        'jQuery': 'jQuery'
+    },
     // 路径配置
     alias: {
         components: path.join(__dirname, './components')
