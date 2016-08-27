@@ -1,12 +1,0 @@
-body .less-div p {
-  color: #B91363;
-}
-body .less-div input {
-  color: #B91363;
-  width: 100px;
-}
-
-body {
-  background-color: #f00;
-  background-image: url(/build/static/pkg/images/baidu_jgylogo3-803bb46a6acef395ed9353de2dcf26f5.gif) no-repeat;
-}
