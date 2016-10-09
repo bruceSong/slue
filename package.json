@@ -18,7 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "classnames": "^2.2.5",
-    "slue": "^1.1.7",
+    "slue": "^1.2.2",
     "browser-sync": "^2.7.12",
     "merge-stream": "^1.0.0"
   },

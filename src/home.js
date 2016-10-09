@@ -4,10 +4,12 @@ require('./modules/b.css');
 var modA = require('./modules/modA.js');
 var modD = require('./modules/modD');
 
+//var input = require('components/input');
+
 // slue-conf alain demo
-var modC = require('components/modC');
+//var modC = require('components/modC');
 modA.bar();
-modC.bar();
+//modC.bar();
 exports.app = function() {
     console.log('test app');
 }

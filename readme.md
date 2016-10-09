@@ -5,13 +5,6 @@ gulp基文件流特点使其在构建上具有很大灵活性，slue也是基于
 webpack一切皆模块的思想给开发带来很大便利，但其本身不是一个很好的实现，API设计上存在存在缺陷；
 模块化适合集中配置，gulp本身没有提供模块化机制，其碎片化的任务处理方式不太好写处理模块化的插件，对期扩展到是不错的注意，很遗憾，gulp不是我写的，所以我只能另起炉灶。
 
-## 说明
-* js、json、html会被处理成js模块
-* css目前支持css和less两种格式
-* 支持jsx、es6
-* 支持node_modules，node_modules的顶级目录为项目根目录
-* 暂不支持模块id量添加变量，如require('lib' + md)是不支持的
-
 ## slue-conf.js打包配置清单
 ```javascript
 var path = require('path');
@@ -67,24 +60,4 @@ slue.task('build', function() {
     });
     return merge(streams[0], streams[1]);
 });
-```
-`jsBound` 打包js，返回js包的stream
-
-```javascript
-var js = slue.jsBound(slueConfig).pipe(slue.jsdir);
-```
-`commonJsBound` 打包公共js模块，返回公共js包的stream，该方法要先于jsBound调用
-
-```javascript
-var commonJs = slue.commonJsBound(slueConfig).pipe(slue.jsdir);
-```
-`cssBound` 打包css，返回css包的stream
-
-```javascript
-var css = slue.cssBound(slueConfig).pipe(slue.cssdir);
-```
-`commonCssBound` 打包公共css，返回公共css包的stream，该方法要先于cssBound调用
-
-```javascript
-var commonCss = slue.commonCssBound(slueConfig).pipe(slue.cssdir);
 ```

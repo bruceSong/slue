@@ -12,6 +12,7 @@ slue.task('build', function() {
         return stream.pipe(slue[map[i]]);
     });
     return merge(streams[0], streams[1]);
+    //slue.bound(slueConfig)
 });
 
 slue.task('server', function() {
