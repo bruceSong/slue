@@ -1,9 +1,9 @@
 var path = require('path');
 module.exports = {
     releaseto: './build',
-    root: 'static/pkg/',// 静态文件在服务器上的根目录
+    root: 'static/pkg/', // 静态文件在服务器上的根目录
     jsdir: '/js/',
-    cssdir: '/css/',// 该值也为默认值
+    cssdir: '/css/', // 该值也为默认值
     imgdir: '/images/',
 
     /*

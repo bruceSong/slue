@@ -1,29 +1,29 @@
 {
-  "name": "gulp-webbouner-demo",
-  "version": "1.0.0",
-  "description": "web前端模块化工具，js、css、html和json等文件的模块化管理器",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bruceSong/gulp-packer.git"
-  },
-  "keywords": [
-    "web",
-    "packer"
-  ],
-  "author": "西楚剑客",
-  "license": "ISC",
-  "devDependencies": {
-    "classnames": "^2.2.5",
-    "slue": "^1.2.2",
-    "browser-sync": "^2.7.12",
-    "merge-stream": "^1.0.0"
-  },
-  "bugs": {
-    "url": "https://github.com/bruceSong/gulp-packer/issues"
-  },
-  "homepage": "https://github.com/bruceSong/gulp-packer#readme"
+    "name": "gulp-webbouner-demo",
+    "version": "1.0.0",
+    "description": "web前端模块化工具，js、css、html和json等文件的模块化管理器",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bruceSong/gulp-packer.git"
+    },
+    "keywords": [
+        "web",
+        "packer"
+    ],
+    "author": "西楚剑客",
+    "license": "ISC",
+    "devDependencies": {
+        "classnames": "^2.2.5",
+        "slue": "^1.2.4",
+        "browser-sync": "^2.7.12",
+        "merge-stream": "^1.0.0"
+    },
+    "bugs": {
+        "url": "https://github.com/bruceSong/gulp-packer/issues"
+    },
+    "homepage": "https://github.com/bruceSong/gulp-packer#readme"
 }
