@@ -1,10 +1,11 @@
 require('./modules/a.less');
 require('./modules/b.css');
 
+var React = require('react');
+console.log(React);
+
 var modA = require('./modules/modA.js');
 var modD = require('./modules/modD');
-
-var input = require('components/input');
 
 // slue-conf alain demo
 var modC = require('components/modC');
@@ -14,7 +15,3 @@ modC.bar();
 exports.app = function() {
     console.log('test app');
 }
-
-var input = require('components/input');
-
-console.log(input);

@@ -19,7 +19,6 @@ module.exports = {
         'home.bound.js': ['./src/home.js']
     },
     externals: {
-        'react': 'React',
         'react-dom': 'ReactDOM',
         'react-router': 'ReactRouter',
         'jQuery': 'jQuery'

@@ -17,9 +17,11 @@
     "author": "西楚剑客",
     "license": "ISC",
     "devDependencies": {
+        "react": "^16.3.1",
         "classnames": "^2.2.5",
-        "slue": "^1.2.4",
+        "slue": "^1.2.5",
         "browser-sync": "^2.7.12",
+        "object.omit": "^3.0.0",
         "merge-stream": "^1.0.0"
     },
     "bugs": {
