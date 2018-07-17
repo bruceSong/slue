@@ -1,5 +1,5 @@
 {
-    "name": "gulp-webbouner-demo",
+    "name": "slue",
     "version": "1.0.0",
     "description": "web前端模块化工具，js、css、html和json等文件的模块化管理器",
     "main": "index.js",
@@ -16,13 +16,9 @@
     ],
     "author": "西楚剑客",
     "license": "ISC",
-    "devDependencies": {
-        "react": "^16.3.1",
-        "classnames": "^2.2.5",
-        "slue": "^1.2.6",
-        "browser-sync": "^2.7.12",
-        "object.omit": "^3.0.0",
-        "merge-stream": "^1.0.0"
+    "dependencies": {
+        "slue-fs": "^1.0.8",
+        "slue-pack": "^1.0.0"
     },
     "bugs": {
         "url": "https://github.com/bruceSong/gulp-packer/issues"
